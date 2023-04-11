@@ -1,0 +1,22 @@
+#bars{
+    display:flex;
+    align-items: flex-end;
+}
+
+.bar{
+    background-color: blueviolet;
+    border: 1px solid blue;
+    height: 100%;
+    margin: 1px;
+    flex-grow: 1;
+    animation: move 1s linear infinite;
+}
+
+@keyframes move {
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(-100%);
+}
+}
